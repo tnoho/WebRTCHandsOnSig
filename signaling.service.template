@@ -1,0 +1,12 @@
+[Unit]
+Description=WebRTC HandsOn signaling server
+ConditionPathExists=<your GOPATH>/signaling/signaling
+ 
+[Service]
+Restart=always
+RestartSec=3
+WorkingDirectory=<your GOPATH>/signaling
+ExecStart=<your GOPATH>/signaling/signaling
+ 
+[Install]
+WantedBy=multi-user.target
