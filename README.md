@@ -6,6 +6,19 @@
  
 はじめてgoで書きました。おかしな点があればご指摘ください。
 
+# Development
+事前にGoのインストールとGOPATHの準備をする必要があります。準備が済んでる場合は下のコマンドを実行していきます。
+
+```shell
+$ cd $GOPATH/src/github.com
+$ git clone github.com/tnoho/WebRTCHandsOnSig
+$ cd ./WebRTCHandsOnSig
+$ go build 
+$ ./WebRTCHandsOnSig # launch server
+```
+
+サーバーが立ち上がったら `localhost:8080/WebRTCHandsOn/{username}` にブラウザでアクセスしましょう。usernameは自分の好きな名前を埋めましょう。
+
 # 謝辞
 
 templateに利用したのは [yusuke84](https://github.com/yusuke84) 氏の [WebRTCハンズオン](http://qiita.com/yusuke84/items/de9f0f6d221acec6fc07) 用ソースコードです。ありがとうございます！
